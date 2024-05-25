@@ -10,6 +10,7 @@ const IndexPage = () => (
     <p>
       <Link href="/about">About</Link>
     </p>
+    <BlockMath math={"\\hat{H}\\ket{\\Psi_n} = E_n \\ket{\\Psi_n}"} />
   </Layout>
 );
 
