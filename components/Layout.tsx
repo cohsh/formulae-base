@@ -21,6 +21,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
         <a href="/api/users">Users API</a>
       </nav>
     </header>
+    <h1>Formulae Base</h1>
     {children}
     <footer>
       <hr />
