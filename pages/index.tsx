@@ -4,6 +4,8 @@ import * as constants from "../utils/constants";
 import { handleCopyClick } from "../utils/clipboard";
 import { InlineMath, BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const IndexPage = () => {
   const formula = `\\hat{H}\\ket{${constants.TEST_CHAR}_n} = E_n \\ket{${constants.TEST_CHAR}_n}`;
@@ -23,6 +25,7 @@ const IndexPage = () => {
           {constants.TEST_EQ}
         </BlockMath>
       </div>
+      <ToastContainer />
     </Layout>
     )
 };
