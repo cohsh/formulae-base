@@ -1,6 +1,6 @@
 import React from "react";
-import { BlockMath } from "react-katex";
 import { handleCopyClick } from "../utils/clipboard";
+import KatexSpan from "./KatexSpan";
 
 interface CopyableMathBlockProps {
     formula: string;
@@ -9,7 +9,7 @@ interface CopyableMathBlockProps {
 const CopyableMathBlock: React.FC<CopyableMathBlockProps> = ({ formula }) => {
     return (
     <div onClick={handleCopyClick(formula)} style={{ cursor: "pointer" }}>
-        <BlockMath math={formula} />
+        <KatexSpan text={formula} />
     </div>
     );
 };

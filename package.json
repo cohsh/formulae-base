@@ -8,6 +8,7 @@
     "deploy": "yarn build && gh-pages -d out"
   },
   "dependencies": {
+    "@types/katex": "^0.16.7",
     "katex": "^0.16.10",
     "next": "latest",
     "prop-types": "^15.8.1",

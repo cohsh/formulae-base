@@ -1,7 +1,6 @@
 // components/SpecialFunctions.tsx
 import React from "react";
 import CopyableMathBlock from "./CopyableMathBlock";
-import { ToastContainer } from "react-toastify";
 
 interface Formula {
     description: string;
