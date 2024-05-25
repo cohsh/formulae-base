@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import FormulaeSet from "../components/ShowFormulae";
 
-const IndexPage = () => {
+const QuantumMechanicsPage = () => {
     const formulae_set = [
         {
             title: "Schrödinger Equations",
@@ -28,4 +28,4 @@ const IndexPage = () => {
 };
 
 
-export default IndexPage;
+export default QuantumMechanicsPage;

@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import FormulaeSet from "../components/ShowFormulae";
 
-const IndexPage = () => {
+const SpecialFunctionsPage = () => {
     const formulae_set = [
         {
             title: "Gamma Function",
@@ -48,4 +48,4 @@ const IndexPage = () => {
     )
 };
 
-export default IndexPage;
+export default SpecialFunctionsPage;
