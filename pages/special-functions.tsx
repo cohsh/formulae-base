@@ -42,7 +42,7 @@ const IndexPage = () => {
     ];
     
     return (
-        <Layout title="Home | Next.js + TypeScript Example">
+        <Layout>
             <h2>Special Functions</h2>
             <FormulaeSet functions={formulae_set} />
         </Layout>

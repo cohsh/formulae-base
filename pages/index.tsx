@@ -5,8 +5,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 const IndexPage = () => {
   return (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h2>Contents</h2>
+  <Layout>
+    <h2>Samples</h2>
     <ul>
       <li><Link href="/quantum-mechanics">Quantum Mechanics</Link></li>
       <li><Link href="/special-functions">Special Functions</Link></li>
