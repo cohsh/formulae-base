@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import * as constants from "../utils/constants";
 import FormulaeSet from "../components/ShowFormulae";
 
 const IndexPage = () => {
