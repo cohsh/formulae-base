@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export'
-}
-
-module.exports = nextConfig
+module.exports = {
+    output: 'export',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/formulae-base/' : '',
+    basePath: process.env.NODE_ENV === 'production' ? '/formulae-base' : '',
+    images: {
+        unoptimized: true,
+    },
+};
