@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
-import "katex/dist/katex.min.css";
-import "react-toastify/dist/ReactToastify.css";
 
 const IndexPage = () => {
   return (

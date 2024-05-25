@@ -2,7 +2,6 @@
 import React from "react";
 import CopyableMathBlock from "./CopyableMathBlock";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 interface Formula {
     description: string;
@@ -31,7 +30,6 @@ const FormulaeSet: React.FC<FormulaeProps> = ({ functions }) => {
             ))}
         </div>
         ))}
-        <ToastContainer />
     </div>
     );
 };

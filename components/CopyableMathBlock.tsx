@@ -1,7 +1,6 @@
 import React from "react";
 import { BlockMath } from "react-katex";
 import { handleCopyClick } from "../utils/clipboard";
-import "katex/dist/katex.min.css";
 
 interface CopyableMathBlockProps {
     formula: string;

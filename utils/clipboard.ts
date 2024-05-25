@@ -1,5 +1,4 @@
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 // 0.5 sec.
 const TOAST_DISPLAY_DURATION = 500;
