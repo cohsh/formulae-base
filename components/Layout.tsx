@@ -25,7 +25,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
     {children}
     <footer>
       <hr />
-      <span>© Kohei Ishii</span>
+      <span>©Kohei Ishii</span>
     </footer>
   </div>
 );

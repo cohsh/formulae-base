@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import * as constants from "../utils/constants";
 import { handleCopyClick } from "../utils/clipboard";
-import { InlineMath, BlockMath } from "react-katex";
+import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
