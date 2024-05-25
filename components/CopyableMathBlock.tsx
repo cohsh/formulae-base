@@ -10,7 +10,7 @@ interface CopyableMathBlockProps {
 const CopyableMathBlock: React.FC<CopyableMathBlockProps> = ({ formula }) => {
     return (
     <div onClick={handleCopyClick(formula)} style={{ cursor: "pointer" }}>
-        <BlockMath>{formula}</BlockMath>
+        <BlockMath math = {formula}/>
     </div>
     );
 };
