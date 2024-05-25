@@ -2,11 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "export": "next export",
     "type-check": "tsc",
-    "deploy": "yarn build && yarn export && gh-pages -d out"
+    "deploy": "yarn build && gh-pages -d out"
   },
   "dependencies": {
     "katex": "^0.16.10",
