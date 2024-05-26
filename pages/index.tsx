@@ -8,6 +8,7 @@ const IndexPage = () => {
     <ul>
       <li><Link href="/quantum-mechanics">Quantum Mechanics</Link></li>
       <li><Link href="/special-functions">Special Functions</Link></li>
+      <li><Link href="/electron-phonon-interactions">Electron Phonon Interactions</Link></li>
     </ul>
     </Layout>
     )
