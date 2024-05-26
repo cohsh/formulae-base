@@ -6,7 +6,7 @@ const ElectronPhononInteractionsPage = () => {
         {
             title: "Coupling Constants",
             formulae: [
-                { description: "Definition", formula: "g_{n_1n_2\\nu}(\\mathbf{k}, \\mathbf{q}):=\\sum_{\\kappa\\alpha} \\Braket{n_1, \\mathbf{k} + \\mathbf{q}|\\Delta_{\\mathbf{q}\\nu}\\hat{V}|n_2, \\mathbf{k}}" },
+                { description: "Definition", formula: "g_{n_1n_2\\nu}(\\mathbf{k}, \\mathbf{q}):= \\Braket{n_1, \\mathbf{k} + \\mathbf{q}|\\Delta_{\\mathbf{q}\\nu}\\hat{V}|n_2, \\mathbf{k}}" },
                 { description: "Variation", formula: "\\Delta_{\\mathbf{q}\\nu}:=\\sum_{\\kappa \\alpha}e_{\\kappa \\alpha, \\nu}(\\mathbf{q}) \\frac{\\partial}{\\partial \\tau_{\\kappa \\alpha}(\\mathbf{q})}" },
                 { description: "Variation", formula: "\\frac{\\partial}{\\partial \\tau_{\\kappa \\alpha}(\\mathbf{q})} := \\sum_{p} e^{i\\mathbf{q}\\cdot \\mathbf{R}_p} \\frac{\\partial}{\\partial \\tau_{\\kappa \\alpha, p}}" }
             ]
