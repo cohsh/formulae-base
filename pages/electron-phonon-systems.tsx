@@ -4,26 +4,10 @@ import FormulaeSet from "../components/ShowFormulae";
 const ElectronPhononInteractionsPage = () => {
     const formulae_set = [
         {
-            title: "Direct Lattice",
-            formulae: [
-                { description: "Basis", formula: "\\mathbf{A}_d := [\\mathbf{a}_1 \\cdots \\mathbf{a}_d],~(\\mathbf{a}_i \\in \\mathbb{R}^d,~ i = 1, \\cdots, d)" },
-                { description: "Lattice Vectors", formula: "\\mathcal{A}[\\mathbf{A}_d]:=\\{ \\mathbf{A}_d \\cdot [n_1 \\cdots n_d] \\mid n_i =-N_i,\\cdots, N_i,~ i=1,\\cdots, d \\}" },
-                { description: "Cardinality", formula: "N:=|\\mathcal{A}[\\mathbf{A}_d]|" }
-            ]
-        },
-        {
-            title: "Reciprocal Lattice",
-            formulae: [
-                { description: "Basis", formula: "\\mathbf{B}_d := [\\mathbf{b}_1 \\cdots \\mathbf{b}_d],~(\\mathbf{b}_i \\in \\mathbb{R}^d,~ i = 1, \\cdots, d)" },
-                { description: "Lattice Vectors", formula: "\\mathcal{B}[\\mathbf{B}_d]:=\\{ \\mathbf{B}_d \\cdot \\mathbf{n} \\mid \\mathbf{n} \\in \\mathbb{Z}^d \\}" },
-                { description: "Brillouin Zone", formula: "\\mathbb{BZ}:= \\{ \\mathbf{B}_d \\cdot [f_1 \\cdots f_d] \\mid f_i = \\frac{j}{2N_i},~ i=1,\\cdots, d, ~ j=-N_i, \\cdots, N_i\\}"}
-            ]
-        },
-        {
             title: "Bloch Electrons",
             formulae: [
                 { description: "Hamiltonian", formula: "\\hat{H}_\\mathrm{e} := \\hat{T}_\\mathrm{e} + \\hat{V}_e" },
-                { description: "Definition", formula: "\\hat{H}_\\mathrm{e}\\ket{\\psi_{n\\mathbf{k}}}=\\epsilon_{n\\mathbf{k}}\\ket{\\psi_{n\\mathbf{k}}}~(n \\in \\mathbb{N},~ \\mathbf{k} \\in \\mathbb{BZ})" },
+                { description: "Definition", formula: "\\hat{H}_\\mathrm{e}\\ket{\\psi_{n\\mathbf{k}}}=\\epsilon_{n\\mathbf{k}}\\ket{\\psi_{n\\mathbf{k}}}~(n \\in \\mathbb{N},~ \\mathbf{k} \\in \\mathbb{DBZ})" },
                 { description: "Bloch Theorem", formula: "\\psi_{n\\mathbf{k}}(\\mathbf{r} + \\mathbf{R})=e^{i\\mathbf{k} \\cdot \\mathbf{R}} \\psi_{n\\mathbf{k}}(\\mathbf{r})" },
                 { description: "Bloch Function", formula: "\\psi_{n\\mathbf{k}}(\\mathbf{r})=\\frac{1}{\\sqrt{N}}e^{i\\mathbf{k} \\cdot \\mathbf{r}} u_{n\\mathbf{k}}(\\mathbf{r})" }
             ]
