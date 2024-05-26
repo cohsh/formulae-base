@@ -4,15 +4,14 @@ import 'katex/dist/katex.min.css';
 
 interface KatexSpanProps {
     text: string;
-    [key: string]: any;
 }
 
-const KatexSpan: React.FC<KatexSpanProps> = ({ text, ...delegated }) => {
-    const katexTextRef = useRef<HTMLSpanElement | null>(null);
+const KatexSpan: React.FC<KatexSpanProps> = ({ text }) => {
+    const katexRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        if (katexTextRef.current) {
-            renderMathInElement(katexTextRef.current, {
+        if (katexRef.current) {
+            renderMathInElement(katexRef.current, {
                 delimiters: [
                     { left: '$$', right: '$$', display: true },
                     { left: '$', right: '$', display: false },
@@ -21,11 +20,12 @@ const KatexSpan: React.FC<KatexSpanProps> = ({ text, ...delegated }) => {
         }
     }, [text]);
 
-    return (
-        <span ref={katexTextRef} {...delegated}>
-            ${text}$
-        </span>
-    );
+    const formattedText = text
+        .split('\n')
+        .map(line => `$$${line}$$`)
+        .join('\n');
+
+    return <div ref={katexRef} dangerouslySetInnerHTML={{ __html: formattedText }} />;
 };
 
 export default KatexSpan;
