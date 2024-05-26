@@ -1,10 +1,6 @@
-'use client';
-
-import dynamic from 'next/dynamic';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import renderMathInElement from 'katex/dist/contrib/auto-render.min.js';
 import 'katex/dist/katex.min.css';
-
-const DynamicKatexSpan = dynamic(() => import('./DynamicKatexSpan'), { ssr: false });
 
 interface KatexSpanProps {
     text: string;
@@ -12,7 +8,24 @@ interface KatexSpanProps {
 }
 
 const KatexSpan: React.FC<KatexSpanProps> = ({ text, ...delegated }) => {
-    return <DynamicKatexSpan text={text} {...delegated} />;
+    const katexTextRef = useRef<HTMLSpanElement | null>(null);
+
+    useEffect(() => {
+        if (katexTextRef.current) {
+            renderMathInElement(katexTextRef.current, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                ],
+            });
+        }
+    }, [text]);
+
+    return (
+        <span ref={katexTextRef} {...delegated}>
+            ${text}$
+        </span>
+    );
 };
 
 export default KatexSpan;
