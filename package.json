@@ -4,7 +4,7 @@
     "dev": "next",
     "build": "next build",
     "type-check": "tsc",
-    "deploy": "yarn build && touch out/.nojekyll && gh-pages -d out"
+    "deploy": "yarn build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@types/katex": "^0.16.7",
