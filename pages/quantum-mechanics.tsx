@@ -17,6 +17,13 @@ const QuantumMechanicsPage = () => {
                 { description: "Cannonical", formula: '[\\hat{x}_i, \\hat{p}_j] = i \\delta_{ij}' },
             ]
         },
+        {
+            title: "Heisenberg Pictures (Assume Hamiltonian is time independent.)",
+            formulae: [
+                { description: "Heisenberg", formula: '\\hat{O}_\\mathrm{H}(t) := e^{i \\hat{H} t}\\hat{O}_\\mathrm{S} e^{-i \\hat{H} t}' },
+                { description: "Heisenberg", formula: 'i\\frac{\\partial}{\\partial t} \\hat{O}_\\mathrm{H}(t) = [\\hat{O}_\\mathrm{H}(t), \\hat{H}]' },
+            ]
+        }
     ];
     
     return (
