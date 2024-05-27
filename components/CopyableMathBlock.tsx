@@ -3,13 +3,13 @@ import { handleCopyClick } from "../utils/clipboard";
 import KatexSpan from "./KatexSpan";
 
 interface CopyableMathBlockProps {
-    formula: string;
+    children: string;
 }
 
-const CopyableMathBlock: React.FC<CopyableMathBlockProps> = ({ formula }) => {
+const CopyableMathBlock: React.FC<CopyableMathBlockProps> = ({ children }) => {
     return (
-    <div onClick={handleCopyClick(formula)} style={{ cursor: "pointer" }}>
-        <KatexSpan text={formula} />
+    <div onClick={handleCopyClick(children)} style={{ cursor: "pointer" }}>
+        <KatexSpan text={children} />
     </div>
     );
 };
