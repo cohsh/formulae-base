@@ -7,11 +7,15 @@ interface CopyableMathBlockProps {
 }
 
 const CopyableMathBlock: React.FC<CopyableMathBlockProps> = ({ children }) => {
+    const formula = removeLineBreaks(children);
+
     return (
-    <div onClick={handleCopyClick(children)} style={{ cursor: "pointer" }}>
-        <KatexSpan text={children} />
+    <div onClick={handleCopyClick(formula)} style={{ cursor: "pointer" }}>
+        <KatexSpan text={formula} />
     </div>
     );
 };
+
+const removeLineBreaks = (str: string) => str.replace(/\s+/g, ' ').trim();
 
 export default CopyableMathBlock;
